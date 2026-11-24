@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PHListing</title>
+<meta name="description" content="Write a complete Product Hunt listing with the AI provider you choose, then submit it through Product Hunt's API.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20rx%3D%2222%22%20fill%3D%22%23ff6154%22%2F%3E%3Cpath%20d%3D%22M22%2057.2%2050%2032l28%2025.2v17L50%2049%2022%2074.2Z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E">
+<style>
+  :root {
+    --bg:#ffffff; --surface:#f6f7f9; --border:#e3e7ee;
+    --text:#111725; --muted:#5b6675; --accent:#ff6154;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0c0e12; --surface:#14171d; --border:#262c37; --text:#e8ebf0; --muted:#98a2b3; color-scheme: dark; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.65 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 72px 20px 96px; }
+  .brand { display: flex; align-items: center; gap: 12px; margin-bottom: 44px; }
+  .brand svg { width: 40px; height: 40px; }
+  .brand span { font-weight: 700; letter-spacing: -.02em; font-size: 20px; }
+  h1 { font-size: 34px; line-height: 1.18; letter-spacing: -.028em; margin: 0 0 18px; }
+  h2 { font-size: 18px; letter-spacing: -.01em; margin: 40px 0 10px; }
+  p { margin: 0 0 14px; }
+  .lead { font-size: 18px; color: var(--muted); }
+  ul { margin: 0 0 16px; padding-left: 22px; color: var(--muted); }
+  li { margin: 0 0 7px; }
+  li strong { color: var(--text); font-weight: 600; }
+  a { color: var(--accent); }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; margin: 28px 0 0; }
+  .links a {
+    display: inline-block; padding: 9px 16px; border-radius: 999px;
+    border: 1px solid var(--border); background: var(--surface);
+    color: var(--text); text-decoration: none; font-size: 14.5px;
+  }
+  .links a.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><rect width="100" height="100" rx="22" fill="#ff6154"/><path d="M22 57.2 50 32l28 25.2v17L50 49 22 74.2Z" fill="#fff"/></svg>
+    <span>PHListing</span>
+  </div>
+
+  <h1>Write the listing.<br>Launch through the official API.</h1>
+  <p class="lead">A Chrome extension that turns a short brief about your product into a
+    complete Product Hunt launch listing, then submits it to Product Hunt for you.</p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li><strong>Writes the whole listing</strong> — tagline, description, launch tags,
+      categories, pricing type and the maker's first comment, all inside Product Hunt's
+      own character limits.</li>
+    <li><strong>Uses real tags and categories</strong> — names are checked against
+      Product Hunt's own lists, so an invented tag is corrected rather than dropped in
+      silence at submission time.</li>
+    <li><strong>Submits through Product Hunt's API</strong> — no form filling. Your
+      images are uploaded and the draft is created in under a minute.</li>
+    <li><strong>Nothing goes live without you</strong> — every run ends in a private
+      draft or a scheduled launch, and it can stop before the final step so you press
+      the button yourself.</li>
+  </ul>
+
+  <h2>What you need</h2>
+  <ul>
+    <li>A Product Hunt account — you approve PHListing on Product Hunt's own page.</li>
+    <li>An AI provider of your own, or a local model. PHListing includes no AI and
+      resells none.</li>
+    <li>Google Chrome 116 or newer.</li>
+  </ul>
+  <p>PHListing is free. There is no PHListing account and no subscription.</p>
+
+  <h2>Your data</h2>
+  <p>Everything you create stays in your browser. There is no PHListing server and no
+    analytics. Only two things leave: what you ask to have written goes to the AI
+    provider you chose, and your finished listing goes to Product Hunt.</p>
+
+  <div class="links">
+    <a class="primary" href="privacy.html">Privacy policy</a>
+    <a href="https://github.com/FlyToRakib/phlisting-site/issues">Support &amp; bug reports</a>
+  </div>
+
+  <footer>PHListing is an independent tool. It is not affiliated with, endorsed by or
+    sponsored by Product Hunt.</footer>
+</div>
+</body>
+</html>

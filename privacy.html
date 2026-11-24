@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PHListing — Privacy Policy — PHListing</title>
+<meta name="description" content="How the PHListing Chrome extension handles your data.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20rx%3D%2222%22%20fill%3D%22%23ff6154%22%2F%3E%3Cpath%20d%3D%22M22%2057.2%2050%2032l28%2025.2v17L50%2049%2022%2074.2Z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E">
+<style>
+  :root {
+    --bg:#ffffff; --surface:#f6f7f9; --border:#e3e7ee;
+    --text:#111725; --muted:#5b6675; --accent:#ff6154;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0c0e12; --surface:#14171d; --border:#262c37; --text:#e8ebf0; --muted:#98a2b3; color-scheme: dark; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.65 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 56px 20px 96px; }
+  .brand { display: flex; align-items: center; gap: 12px; margin-bottom: 40px; }
+  .brand svg { width: 34px; height: 34px; border-radius: 8px; }
+  .brand span { font-weight: 700; letter-spacing: -.02em; font-size: 18px; }
+  h1 { font-size: 32px; line-height: 1.2; letter-spacing: -.025em; margin: 0 0 24px; }
+  h2 { font-size: 21px; letter-spacing: -.015em; margin: 44px 0 12px; }
+  h3 { font-size: 17px; margin: 28px 0 8px; }
+  p, li { color: var(--text); }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 16px; padding-left: 22px; }
+  li { margin: 0 0 7px; }
+  a { color: var(--accent); }
+  code { background: var(--surface); border: 1px solid var(--border); border-radius: 4px; padding: 1px 5px; font-size: 13.5px; }
+  hr { border: 0; border-top: 1px solid var(--border); margin: 36px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 0 0 20px; font-size: 15px; display: block; overflow-x: auto; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--border); }
+  th { font-weight: 600; background: var(--surface); white-space: nowrap; }
+  em { color: var(--muted); }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><rect width="100" height="100" rx="22" fill="#ff6154"/><path d="M22 57.2 50 32l28 25.2v17L50 49 22 74.2Z" fill="#fff"/></svg>
+    <span>PHListing</span>
+  </div>
+<h1>PHListing — Privacy Policy</h1>
+<ul><li><strong>Extension:</strong> PHListing (Chrome extension), version 1.0.0</li><li><strong>Developer:</strong> Rakibuzzaman — an individual developer <em>(confirm the exact published name before you publish this page)</em></li><li><strong>Contact for privacy questions and requests:</strong> flytorakib@gmail.com</li><li><strong>Effective date:</strong> 24 November 2026</li><li><strong>Last updated:</strong> 24 November 2026</li></ul>
+<hr>
+<h2>1. In one paragraph</h2>
+<p>PHListing helps you write a Product Hunt launch listing and submit it to Product Hunt. Everything you create stays in your own browser. There is no PHListing account, no PHListing server, and no analytics — the developer operates no backend for this extension and receives none of your data. Two things leave your browser, both only when you ask for them: what you want written goes to the AI provider you chose, and your finished listing goes to Product Hunt.</p>
+<h2>2. What the extension does</h2>
+<p>You describe your product in a few sentences. PHListing sends that description to an AI provider you have configured, which writes a complete Product Hunt listing — tagline, description, launch tags, categories, pricing type and the maker's first comment. You review and edit it. When you are ready, PHListing creates the draft or schedules the launch on Product Hunt using Product Hunt's official API and the authorisation you granted.</p>
+<h2>3. What PHListing stores, and where</h2>
+<p>All of the following is stored <strong>on your device only</strong>, using the Chrome extension storage APIs. It is written to <code>chrome.storage.local</code> and IndexedDB. PHListing does <strong>not</strong> use <code>chrome.storage.sync</code>, so none of it is copied to your Google account or to your other computers.</p>
+<table><thead><tr><th>What</th><th>Where</th><th>Why</th></tr></thead><tbody><tr><td>Products, briefs, listing fields, launch dates</td><td><code>chrome.storage.local</code></td><td>The work you are preparing</td></tr><tr><td>Your conversation with the AI provider</td><td><code>chrome.storage.local</code></td><td>So an edit can refer to what was said before</td></tr><tr><td>Launch history and run logs</td><td><code>chrome.storage.local</code></td><td>So you can see what was sent and what Product Hunt answered</td></tr><tr><td>Your settings and preferences</td><td><code>chrome.storage.local</code></td><td>To remember your choices</td></tr><tr><td>AI provider records, <strong>including the API keys you paste</strong></td><td><code>chrome.storage.local</code></td><td>To call the provider you chose</td></tr><tr><td>Product Hunt access and refresh tokens</td><td><code>chrome.storage.local</code></td><td>So you do not sign in again every time</td></tr><tr><td>Your Product Hunt account id, username and display name</td><td><code>chrome.storage.local</code></td><td>To show which account is connected</td></tr><tr><td>Uploaded images (thumbnail and gallery)</td><td>IndexedDB</td><td>To upload them to Product Hunt at launch</td></tr><tr><td>The launch currently running</td><td><code>chrome.storage.session</code></td><td>So a restarted service worker can settle it</td></tr></tbody></table>
+<p><strong>No encryption claim is made.</strong> API keys and access tokens are stored in Chrome's extension storage in plain form. That storage is isolated from web pages and from other extensions by Chrome, and is protected by your operating system account; it is not additionally encrypted by PHListing. Treat your computer's own security as the protection for those keys.</p>
+<h2>4. What leaves your browser</h2>
+<h3>4.1 To the AI provider you choose</h3>
+<p><strong>When:</strong> only when you ask for a listing to be written or changed, press <strong>Test</strong> on a provider, or refresh a provider's model list.</p>
+<p><strong>Where:</strong> the provider you configured and set as default. PHListing ships support for Revoye, OpenAI, Anthropic (Claude), Google Gemini, OpenRouter, DeepSeek, Qwen (Alibaba DashScope), Perplexity, any OpenAI-compatible endpoint you supply, and local models served by Ollama or LM Studio. A provider you have not configured is never contacted.</p>
+<p><strong>What is sent:</strong></p>
+<ul><li>PHListing's instructions about how a Product Hunt listing should be written;</li><li>the brief you wrote and the listing fields as they stand;</li><li>the earlier messages in that product's conversation;</li><li>the instruction you just typed;</li><li>a small label identifying the request — <code>app: "phlisting-ext"</code>, the local product id and message id — used to match an asynchronous answer to the right request;</li><li>your API key for that provider, in the request's authorisation header.</li></ul>
+<p><strong>What is not sent:</strong> your images are never sent to an AI provider. Your Product Hunt token is never sent to an AI provider. Your Google account is never involved.</p>
+<p><strong>One provider-specific detail:</strong> requests to OpenRouter also carry the attribution headers that service asks integrations to send — <code>HTTP-Referer: https://github.com/phlisting</code> and <code>X-Title: PHListing</code>. These identify the application, not you.</p>
+<p><strong>About Revoye:</strong> Revoye is a third-party service, operated independently of PHListing's developer. It is not a model API: it passes your prompt to an AI account you are already signed into, driven by Revoye Desk software running on your own machine. If you choose Revoye, your content is handled by Revoye and by whichever AI account it routes to, under their terms, not ours.</p>
+<p><strong>Once content reaches a provider, that provider's privacy policy and retention rules govern it.</strong> PHListing cannot delete, recall or control data held by a provider. Read the policy of the provider you choose.</p>
+<h3>4.2 To Product Hunt</h3>
+<p><strong>When:</strong> when you connect your account, when you browse Product Hunt's launch tags and categories, and when you launch.</p>
+<p><strong>Where:</strong> <code>https://mcp.producthunt.com</code> (Product Hunt's official API) and <code>https://www.producthunt.com</code> (the OAuth server that API names).</p>
+<p><strong>What is sent:</strong></p>
+<ul><li>during sign-in: PHListing's own client registration and the standard OAuth 2.1 + PKCE exchange. Your Product Hunt password is typed on Product Hunt's own page and is never seen by PHListing;</li><li>when you launch: the listing fields you approved — name, tagline, description, launch tags, categories, pricing type, links, X handle, maker usernames, launch date, promotional text and code, and the maker's first comment — and the image files you uploaded;</li><li>lookups while you type: the tag, category or maker name you are searching for, so the real Product Hunt list can be offered;</li><li>your access token, as the request's authorisation.</li></ul>
+<p><strong>Scopes granted:</strong> <code>mcp:account</code>, <code>launches:read</code> and <code>launches:write</code>. Product Hunt also offers advertising scopes (<code>ads:read</code>, <code>ads:write</code>); PHListing does not request them. The maker usernames you add are Product Hunt usernames you choose to credit on your own launch.</p>
+<h3>4.3 Nowhere else</h3>
+<p>PHListing contains <strong>no</strong> analytics, telemetry, crash reporting, advertising, payment processing, A/B testing or third-party SDK of any kind. It loads no remote code: every script it runs ships inside the extension package, and its content security policy permits only <code>script-src 'self'</code>. There is no PHListing server, so there is nothing the developer could receive.</p>
+<h2>5. What is never collected</h2>
+<p>PHListing does not collect, read or transmit: your browsing history, the pages you visit, your search queries, the content of any website, your location, device identifiers, health information, financial or payment information, or any government identifier. It installs <strong>no content scripts</strong> and therefore runs no code on any web page.</p>
+<h2>6. Sale and sharing</h2>
+<p>Your data is never sold. It is never shared with anyone for advertising, credit scoring, lending, or any purpose unrelated to writing and submitting your listing. There are no data brokers, no partners and no affiliates receiving anything.</p>
+<h2>7. Retention and deletion</h2>
+<p>PHListing keeps your data until you remove it. Nothing expires on its own, and there is no remote copy to delete.</p>
+<table><thead><tr><th>To delete</th><th>Do this</th></tr></thead><tbody><tr><td>One image</td><td>Remove it on the product page</td></tr><tr><td>One product, with its brief, listing, chat and images</td><td>Delete the product on the Products page</td></tr><tr><td>A conversation only</td><td>Clear the chat on the product page</td></tr><tr><td>A launch record</td><td>Delete the run on the Activity page, or <strong>Clear failed</strong></td></tr><tr><td>An AI provider and its API key</td><td><strong>Remove</strong> that provider on the AI providers page</td></tr><tr><td>The Product Hunt connection</td><td><strong>Disconnect</strong> in Settings — PHListing asks Product Hunt to revoke the token and deletes it locally</td></tr><tr><td>Everything</td><td>Uninstall the extension from <code>chrome://extensions</code>. Chrome deletes the extension's storage, including IndexedDB</td></tr></tbody></table>
+<p>Deleting a launch record in PHListing deletes only the local record. A draft or a scheduled launch that already exists on Product Hunt is unaffected; remove that on Product Hunt.</p>
+<p>To revoke PHListing's access to your Product Hunt account at any time, use <strong>Disconnect</strong> in Settings, or Product Hunt's own connected-applications settings.</p>
+<h2>8. Your choices</h2>
+<ul><li>You choose whether to connect a Product Hunt account at all. Without it, the extension still writes listings; it simply cannot submit them.</li><li>You choose which AI provider writes your listing, and you can use a local model so that nothing you write leaves your computer.</li><li>You choose whether a launch finishes automatically or stops for you to confirm the last step ("Finish the launch for me" in Settings).</li><li>A provider at an address PHListing does not already have permission for cannot be saved until you grant that one host through Chrome's own permission prompt, which you may decline.</li></ul>
+<h2>9. Security</h2>
+<p>What can be stated precisely:</p>
+<ul><li>Every request PHListing makes is HTTPS, except to a local model server on <code>localhost</code>, where traffic does not leave your computer.</li><li>The Product Hunt sign-in uses OAuth 2.1 with PKCE; PHListing never receives your password.</li><li>Image uploads use a single-use ticket issued by Product Hunt that carries its own token for that one upload; your connection's own token is not sent there.</li><li>The extension requests the narrowest Product Hunt scopes it can work with.</li><li>Data is stored in Chrome's extension storage, which other extensions and web pages cannot read.</li></ul>
+<p>What is <strong>not</strong> claimed: PHListing does not encrypt your stored keys beyond what Chrome and your operating system provide, and it cannot protect data once it has reached an AI provider or Product Hunt.</p>
+<h2>10. Children</h2>
+<p>PHListing is a tool for people launching products on Product Hunt. It is not directed at children, and it is not intended for use by anyone under 13 (or the minimum age in your country, if higher). No age information is collected.</p>
+<h2>11. International transfers</h2>
+<p>PHListing itself transfers nothing. The AI provider and Product Hunt may process your content on servers in other countries; where that happens is determined by the services you choose, under their own policies.</p>
+<h2>12. Chrome Web Store User Data Policy and Limited Use</h2>
+<p>PHListing's use of information received from Google APIs, and all handling of user data, complies with the <a href="https://developer.chrome.com/docs/webstore/program-policies/user-data-faq">Chrome Web Store User Data Policy</a>, including the Limited Use requirements. Specifically:</p>
+<ul><li>data is used only to provide and improve the single purpose shown in the listing — writing and submitting your Product Hunt listing;</li><li>data is not transferred to anyone except the AI provider you chose and Product Hunt, each as described above, and each at your instruction;</li><li>data is not used for advertising, including personalised, retargeted or interest-based advertising;</li><li>no human reads your data at the developer, because the developer never receives it;</li><li>data is not sold, and is not used to determine creditworthiness or for lending purposes.</li></ul>
+<p>PHListing requests no Google API scopes. The <code>identity</code> permission is used only to run Product Hunt's OAuth flow; no Google account information is requested or read.</p>
+<h2>13. Changes to this policy</h2>
+<p>If the extension's data handling changes — a new provider, a new destination, anything else material — this page is updated before or with the release that changes it, and the "Last updated" date above changes with it. Significant changes will also be noted in the extension's store listing. The published version of this page always describes the current released version.</p>
+<h2>14. Contact</h2>
+<p>Privacy questions, data requests and anything else about this policy:</p>
+<ul><li>Email: flytorakib@gmail.com</li><li>Issues: https://github.com/FlyToRakib/phlisting-site/issues</li></ul>
+<h2>15. Independence</h2>
+<p>PHListing is an independent tool. It is not affiliated with, endorsed by, sponsored by or otherwise connected to Product Hunt, Google, or any AI provider named in this policy. Those names are used only to identify the services the extension can work with.</p>
+  <footer>PHListing is an independent tool and is not affiliated with or endorsed by Product Hunt.</footer>
+</div>
+</body>
+</html>
