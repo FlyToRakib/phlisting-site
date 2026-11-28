@@ -5,6 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PHListing</title>
 <meta name="description" content="Write a complete Product Hunt listing with the AI provider you choose, then submit it through Product Hunt's API.">
+<link rel="canonical" href="https://flytorakib.github.io/phlisting-site/">
+<meta property="og:site_name" content="PHListing">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://flytorakib.github.io/phlisting-site/">
+<meta property="og:title" content="PHListing — write the listing, launch through the official API">
+<meta property="og:description" content="Write a complete Product Hunt listing with the AI provider you choose, then submit it through Product Hunt's API.">
+<meta property="og:image" content="https://flytorakib.github.io/phlisting-site/images/hero-16x9-1920x1080.png">
+<meta property="og:image:width" content="1920">
+<meta property="og:image:height" content="1080">
+<meta property="og:image:alt" content="The PHListing panel in Chrome, with a readiness checklist and a generated Product Hunt listing.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PHListing — write the listing, launch through the official API">
+<meta name="twitter:description" content="Write a complete Product Hunt listing with the AI provider you choose, then submit it through Product Hunt's API.">
+<meta name="twitter:image" content="https://flytorakib.github.io/phlisting-site/images/hero-16x9-1920x1080.png">
+<meta name="twitter:image:alt" content="The PHListing panel in Chrome, with a readiness checklist and a generated Product Hunt listing.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20rx%3D%2222%22%20fill%3D%22%23ff6154%22%2F%3E%3Cpath%20d%3D%22M22%2057.2%2050%2032l28%2025.2v17L50%2049%2022%2074.2Z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E">
 <style>
   :root {
@@ -21,14 +36,14 @@
     font: 16px/1.65 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
   }
-  .wrap { max-width: 680px; margin: 0 auto; padding: 72px 20px 96px; }
-  .brand { display: flex; align-items: center; gap: 12px; margin-bottom: 44px; }
-  .brand svg { width: 40px; height: 40px; }
-  .brand span { font-weight: 700; letter-spacing: -.02em; font-size: 20px; }
-  h1 { font-size: 34px; line-height: 1.18; letter-spacing: -.028em; margin: 0 0 18px; }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 56px 20px 96px; }
+  .hero { display: block; width: 100%; height: auto; border-radius: 14px; border: 1px solid var(--border); background: #0c0e12; }
   h2 { font-size: 18px; letter-spacing: -.01em; margin: 40px 0 10px; }
   p { margin: 0 0 14px; }
-  .lead { font-size: 18px; color: var(--muted); }
+  .vh {
+    position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
+    overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; border: 0;
+  }
   ul { margin: 0 0 16px; padding-left: 22px; color: var(--muted); }
   li { margin: 0 0 7px; }
   li strong { color: var(--text); font-weight: 600; }
@@ -45,14 +60,13 @@
 </head>
 <body>
 <div class="wrap">
-  <div class="brand">
-    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><rect width="100" height="100" rx="22" fill="#ff6154"/><path d="M22 57.2 50 32l28 25.2v17L50 49 22 74.2Z" fill="#fff"/></svg>
-    <span>PHListing</span>
-  </div>
+  <h1 class="vh">PHListing — write the listing, launch through Product Hunt's official API.</h1>
 
-  <h1>Write the listing.<br>Launch through the official API.</h1>
-  <p class="lead">A Chrome extension that turns a short brief about your product into a
-    complete Product Hunt launch listing, then submits it to Product Hunt for you.</p>
+  <picture>
+    <source media="(max-width: 640px)" srcset="images/hero-9x16-1080x1920.png" width="1080" height="1920">
+    <img class="hero" src="images/hero-16x9-1920x1080.png" width="1920" height="1080"
+      alt="The PHListing panel open in Chrome: a readiness checklist with every launch field ticked off, the short brief it writes from, and the generated name, website and tagline beside an assistant explaining the choices it made.">
+  </picture>
 
   <h2>What it does</h2>
   <ul>
